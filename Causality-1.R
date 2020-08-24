@@ -107,7 +107,7 @@ p4
 
 # NHST
 
-z <- (mean(Advertising$Sales) - mean(filter(Advertising, Grp2 == "G2")$Sales))/((sd(filter(Advertising, Grp2 == "G2")$Sales))/sqrt(nrow(filter(Advertising, Grp2 == "G2"))))
+z <- (mean(Advertising$Sales) - mean(filter(Advertising, NGrp == "G2")$Sales))/((sd(filter(Advertising, NGrp == "G2")$Sales))/sqrt(nrow(filter(Advertising, NGrp == "G2"))))
 z
 p <- 2*pnorm(-abs(z))
 p
